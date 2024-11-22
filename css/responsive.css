@@ -1486,12 +1486,7 @@ body {
 	.header-style-1 .navbar-toggler {
 		color:#094B9E;
 	}
-	.header-style-1 .pbmit-menu-wrap .navigation.clearfix >li>ul>li:hover>a {
-		color: var(--pbmit-blackish-color);
-	}
-	.header-style-1 .pbmit-menu-wrap .navigation.clearfix > li > ul li:hover > a {
-		color: var(--pbmit-blackish-color);
-	}
+	/* git  */
 	.energy-counter_one .pbmit-heading-subheading .pbmit-heading_desc {
 		padding: 30px 0px 50px 0px;
 	}
