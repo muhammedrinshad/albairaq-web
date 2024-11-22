@@ -3717,11 +3717,11 @@ rs-slide a:hover{
 		font-size: 50px;
 	}
 	.side-bar {
-		max-height: calc(80vh);
+		max-height: calc(50vh);
 		overflow: auto;
 	}
 	.service-slider{
-		height: 80vh;
+		height: 50vh !important;
 	}
 }
 
