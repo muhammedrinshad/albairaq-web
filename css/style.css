@@ -3684,7 +3684,7 @@ background-position: bottom;
 
 
 
-.side-bar {
+/* .side-bar {
     max-height: calc(100vh - 100px);
     overflow: auto;
 }
@@ -3696,7 +3696,7 @@ background-position: bottom;
     float: left;
     width: 75px;
     height: 55px;
-}
+} */
 
 
 
@@ -3827,7 +3827,7 @@ height: 100% !important;
 }
 
 .side-bar {
-    max-height: calc(80vh);
+    max-height: calc(60vh);
     overflow: auto;
 }
 .side-bar-card{
