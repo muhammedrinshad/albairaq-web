@@ -3720,6 +3720,9 @@ rs-slide a:hover{
 		max-height: calc(80vh);
 		overflow: auto;
 	}
+	.service-slider{
+		height: 80vh;
+	}
 }
 
 @media(max-width:1200px) {
