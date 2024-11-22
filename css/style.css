@@ -3889,7 +3889,7 @@ height: 100% !important;
     object-fit: cover;
 }
 
-/* Fade-in animation */
+
 @keyframes fade {
     from {
         opacity: 0;
