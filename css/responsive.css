@@ -3717,7 +3717,7 @@ rs-slide a:hover{
 		font-size: 50px;
 	}
 	.side-bar {
-		max-height: calc(50vh);
+		max-height: calc(50vh) !important;
 		overflow: auto;
 	}
 	.service-slider{
