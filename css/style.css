@@ -35,34 +35,6 @@
     position: relative;
 }
 
-.pbmit-section-grid::before,
-.pbmit-section-grid::after {
-    position: absolute;
-    content: "";
-    width: 1px;
-    height: 100%;
-    top: 0;
-    background: #edeeee;
-}
-
-.pbmit-section-grid::after {
-    right: 185px;
-    left: inherit;
-}
-
-.pbmit-section-grid::before {
-    left: 186px;
-}
-
-.pbmit-section-grid>.container:after {
-    position: absolute;
-    content: "";
-    width: 1px;
-    height: 100%;
-    left: 50%;
-    top: 0;
-    background: #edeeee;
-}
 
 .reshaping-energy_one .lottie-player-style {
     margin-top: -50px;
@@ -451,16 +423,6 @@
 .marquee_two {
     padding-top: 80px;
     position: relative;
-}
-
-.marquee_two.pbmit-section-grid>.container-fluid:after {
-    position: absolute;
-    content: "";
-    width: 1px;
-    height: 100%;
-    left: 50%;
-    top: 0;
-    background: #edeeee;
 }
 
 /* Client */
