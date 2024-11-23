@@ -347,9 +347,9 @@
     color: #249a91;
     background-color: var(--pbmit-global-color);
 }
-.pbmit-btn-blackish:hover span:before {
+/* .pbmit-btn-blackish:hover span:before {
     color: #249a91;
-}
+} */
 .pbmit-btn-blackish {
     background-image: none!important;
     background-color: #249a91;
