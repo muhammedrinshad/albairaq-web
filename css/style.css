@@ -421,7 +421,7 @@
 
 /* Marquee */
 .marquee_two {
-    padding-top: 80px;
+    padding-top: 20px;
     position: relative;
 }
 
@@ -3158,7 +3158,7 @@ background-position: bottom;
 .partners-container {
     display: flex;
     align-items: center;
-    padding: 60px 0;
+    /* padding: 60px 0; */
 }
 
 .partners-container h3 {
@@ -3757,10 +3757,12 @@ ul#tabs-nav li.active a {
 
 .service-img{
     display: flex !important;
-    width: 100%;
+    width: 65%;
+    /* height: 350px; */
+       margin: 0 auto !important;
 }
-.service-img img{
-    margin: 0 auto !important;
+.service-img img {
+   width: 100%;
 }
   
 .rs-parallax-wrap{
@@ -3918,6 +3920,10 @@ height: 100% !important;
 
 .w3-button-custom-right {
     right: 10px; 
+}
+.main-menu .navigation > li > ul, .main-menu .navigation > li > ul > li > ul {
+    min-width: 268px !important;
+ 
 }
 
 

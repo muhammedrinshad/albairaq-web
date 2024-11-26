@@ -2611,10 +2611,10 @@ blockquote small em {
     width: 100%;
 }
 .main-menu .navigation > li > ul li:hover > a {
-    color: var(--pbmit-global-color);
+    color: #094B9E;
 }
 .main-menu .navigation > li > ul li:hover::after {
-    color: var(--pbmit-global-color) !important;
+    color: #094B9E !important;
 }
 
 /*----------------------------------------*/
