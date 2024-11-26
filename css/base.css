@@ -246,7 +246,7 @@
      text-decoration: none !important;
 }
  a:focus, a:hover {
-     color: var(--pbmit-link-color-hover);
+     color:#094B9E;
      text-decoration: none !important;
 }
  a.link-btn, .link-btn a{
