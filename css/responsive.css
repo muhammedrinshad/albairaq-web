@@ -4144,9 +4144,21 @@ ul#tabs-nav {
 }
 }
 
-@media(max-width:414px) {
-/* .pbmit-tbar-title {
-	font-size: 22px !important;
-	text-align: center;
-} */
+@media(max-width:440px) {
+	.pbmit-progress-wrap {
+		right: 10px;
+		bottom: 90px;
+		height:40px;
+		width: 40px;
+
+	}
+	.pbmit-progress-wrap::after {
+
+		left: 2px;
+		top: -2px;
+		height: 20px;
+		width: 38px;
+		font-size: 20px;
+	
+	}
 }
