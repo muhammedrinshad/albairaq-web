@@ -878,9 +878,9 @@ body {
 }
 
 @media (min-width: 1201px){
-	.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+	/* .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
         max-width: 1554px;
-    }
+    } */
 	/*=== Header ===*/
 	.site-header .site-navigation ul.navigation .righticon{
 		display: none;
@@ -2760,7 +2760,7 @@ body {
 @media(max-width:575px) {
 	/*=== Section-Padding ===*/ 
 	.section-md {
-		padding: 50px 10px 50px 10px;
+		padding: 50px 10px 50px 10px !important;
 	}
 	/*=== Title-Bar ===*/
 	.pbmit-title-bar-wrapper, 
@@ -3377,10 +3377,7 @@ body {
 		left: 20px;
 	}
 
-	/* rinshad style */
-	.partners-color {
-		min-height: 405px !important;
-	}
+	
 }
 
 @media only screen and (max-width: 1200px) and (min-width: 1100px) {
@@ -3568,7 +3565,7 @@ rs-slide a:hover{
 
 
 .section-lg,.ihbox-section_one,.energy-counter_two {
-	padding: 40px 0px !important;
+	padding: 60px 0px !important;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -3716,7 +3713,7 @@ rs-slide a:hover{
 		max-height: 80px !important;
 	}
 	.pbmit-tbar-title {
-		font-size: 50px;
+		font-size: 45px;
 	}
 	.side-bar {
 		max-height: calc(50vh) !important;
@@ -3762,9 +3759,11 @@ rs-slide a:hover{
         align-items: self-end;
     }
 
-    .adviser-img img {
-        height: 350px;
-    }
+	.adviser-img img {
+	
+		width: 400px;
+
+	}
 
     .adviser-content h4 {
         font-size: 27px;
@@ -3797,7 +3796,7 @@ rs-slide a:hover{
     }
 
     .partners-color {
-        min-height: 525px !important;
+        min-height: 500px !important;
     }
 
     .partners-container {
@@ -3871,6 +3870,9 @@ rs-slide a:hover{
 	ul#tabs-nav {
 		margin-bottom: 25px;
 	}
+	.pbmit-tbar-title {
+        font-size: 38px;
+    }
     /* rinshad style end */
 }
 
@@ -3879,12 +3881,8 @@ rs-slide a:hover{
 .certificate-img a {
     height: 87px;
 }
-.adviser-img img {
-    height: 250px;
-}
-.adviser-img {
-    padding: 0;
-}
+
+
 .partners-color {
     min-height: 330px !important;
     margin-top: 20px !important;
@@ -4045,6 +4043,23 @@ ul#tabs-nav {
 .service-innerpage {
     margin: 25px 0;
 }
+.adviser-container {
+	height: 100%;
+}
+.adviser-img {
+	display: flex;
+	justify-content: center;
+	height: auto;
+}
+.adviser-img img {
+	position: relative;
+	height: auto;
+	width: 85%;
+	bottom: 0;
+}
+.adviser-container .p-symbol {
+	padding: 45px 30px;
+}
     /* rinshad style end */
 }
 
@@ -4142,6 +4157,9 @@ ul#tabs-nav {
 	padding: 0 0 10px !important;
 	margin-bottom: 10px;
 }
+.partners-padding {
+	padding: 20px !important;
+}
 }
 
 @media(max-width:440px) {
@@ -4160,5 +4178,9 @@ ul#tabs-nav {
 		width: 38px;
 		font-size: 20px;
 	
+	}
+	.adviser-content p {
+		text-align: unset;
+		width: 100%;
 	}
 }
