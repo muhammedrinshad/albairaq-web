@@ -84,7 +84,7 @@ RS_MODULES.modules["revslider21"] = {
       sliderLayout: "fullwidth",
       visibilityLevels: [1600, 1240, 1024, 778, 480], // Adjusted for common screen sizes
       gridwidth: [1600, 1240, 1024, 778, 480], // Responsive grid widths
-      gridheight: [800, 700, 600, 500, 400], // Responsive grid heights
+      gridheight: [800, 700, 600, 500, 350], // Responsive grid heights
       perspective: 600,
       perspectiveType: "global",
       editorheight: [800, 700, 600, 500, 400], // Height for editor view on different breakpoints
@@ -98,7 +98,7 @@ RS_MODULES.modules["revslider21"] = {
           tmp: "<span class=\"tp-bullet-image\"></span>",
           style: "hebe",
           hide_onmobile: true,
-          hide_under: 300, // Hide bullets for devices under 768px
+          hide_under: 768, // Hide bullets for devices under 768px
           v_offset: 50,
         }
       },

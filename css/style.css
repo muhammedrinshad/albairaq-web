@@ -3807,6 +3807,8 @@ height: 100% !important;
 
  #rev_slider_2_1_wrapper .hebe.tp-bullets{
     transform: rotate(0deg ) !important;
+    left: 48.5% !important;
+
  }
 
  .custom-image {
@@ -3953,6 +3955,9 @@ height: 100% !important;
 .main-menu .navigation > li > ul, .main-menu .navigation > li > ul > li > ul {
     min-width: 268px !important;
  
+}
+.slider-padding{
+    padding-top: 4.4rem !important;
 }
 
 
