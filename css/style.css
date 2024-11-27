@@ -3076,19 +3076,20 @@ textarea.form-control {
 }
 .adviser-container p {
     color: #ffffff;
-    font-size: 15px;
+    font-size: 16px;
     margin-top: 15px;
 }
 .adviser-container h4 {
-    font-size: 16px;
+    font-size: 20px;
     color: #fff;
     margin-top: 20px;
     line-height: 10px;
 }
 .adviser-container h5 {
-    font-size: 13px;
+    font-size: 14px;
     color: #ffffff;
     line-height: 20px;
+    margin-top: 12px;
 }
 
 .adviser-content {
@@ -3220,7 +3221,7 @@ background-position: bottom;
 }
 
 .partners-color {
-    min-height: 330px !important;
+    min-height: 360px !important;
 }
 
 .partners-color::before {

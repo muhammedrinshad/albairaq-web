@@ -61,50 +61,63 @@ var	tpj = jQuery;
 	}} // End of RevInitScript
 	if (window.RS_MODULES.checkMinimal!==undefined) { window.RS_MODULES.checkMinimal();};
 /* Slider 2*/ 
-var	tpj = jQuery;
-	if(window.RS_MODULES === undefined) window.RS_MODULES = {};
-	if(RS_MODULES.modules === undefined) RS_MODULES.modules = {};
-	RS_MODULES.modules["revslider21"] = {once: RS_MODULES.modules["revslider21"]!==undefined ? RS_MODULES.modules["revslider21"].once : undefined, init:function() {
-		window.revapi2 = window.revapi2===undefined || window.revapi2===null || window.revapi2.length===0  ? document.getElementById("rev_slider_2_1") : window.revapi2;
-		if(window.revapi2 === null || window.revapi2 === undefined || window.revapi2.length==0) { window.revapi2initTry = window.revapi2initTry ===undefined ? 0 : window.revapi2initTry+1; if (window.revapi2initTry<20) requestAnimationFrame(function() {RS_MODULES.modules["revslider21"].init()}); return;}
-		window.revapi2 = jQuery(window.revapi2);
-		if(window.revapi2.revolution==undefined){ revslider_showDoubleJqueryError("rev_slider_2_1"); return;}
-		revapi2.revolutionInit({
-				revapi:"revapi2",
-				DPR:"dpr",
-				sliderLayout:"fullwidth",
-				visibilityLevels:"1240,1024,778,480",
-				gridwidth:"1554,1024,778,480",
-				gridheight:"930,750,600,500",
-				perspective:600,
-				perspectiveType:"global",
-				editorheight:"930,750,600,500",
-				responsiveLevels:"1240,1024,778,480",
-				progressBar:{disableProgressBar:true},
-				navigation: {
-					wheelCallDelay:1000,
-					onHoverStop:false,
-					bullets: {
-						enable:true,
-						tmp:"<span class=\"tp-bullet-image\"></span>",
-						style:"hebe",
-						hide_onmobile:true,
-						hide_under:"991px",
-						v_offset:50
-					}
-				},
-				viewPort: {
-					global:false,
-					globalDist:"-200px",
-					enable:false
-				},
-				fallbacks: {
-					allowHTML5AutoPlayOnAndroid:true
-				},
-		});
-		
-	}} // End of RevInitScript
-	if (window.RS_MODULES.checkMinimal!==undefined) { window.RS_MODULES.checkMinimal();};
+var tpj = jQuery;
+if (window.RS_MODULES === undefined) window.RS_MODULES = {};
+if (RS_MODULES.modules === undefined) RS_MODULES.modules = {};
+RS_MODULES.modules["revslider21"] = {
+  once: RS_MODULES.modules["revslider21"] !== undefined ? RS_MODULES.modules["revslider21"].once : undefined,
+  init: function () {
+    window.revapi2 = window.revapi2 === undefined || window.revapi2 === null || window.revapi2.length === 0 ? document.getElementById("rev_slider_2_1") : window.revapi2;
+    if (window.revapi2 === null || window.revapi2 === undefined || window.revapi2.length == 0) {
+      window.revapi2initTry = window.revapi2initTry === undefined ? 0 : window.revapi2initTry + 1;
+      if (window.revapi2initTry < 20) requestAnimationFrame(function () { RS_MODULES.modules["revslider21"].init(); });
+      return;
+    }
+    window.revapi2 = jQuery(window.revapi2);
+    if (window.revapi2.revolution == undefined) {
+      revslider_showDoubleJqueryError("rev_slider_2_1");
+      return;
+    }
+    revapi2.revolutionInit({
+      revapi: "revapi2",
+      DPR: "dpr",
+      sliderLayout: "fullwidth",
+      visibilityLevels: [1600, 1240, 1024, 778, 480], // Adjusted for common screen sizes
+      gridwidth: [1600, 1240, 1024, 778, 480], // Responsive grid widths
+      gridheight: [800, 700, 600, 500, 400], // Responsive grid heights
+      perspective: 600,
+      perspectiveType: "global",
+      editorheight: [800, 700, 600, 500, 400], // Height for editor view on different breakpoints
+      responsiveLevels: [1600, 1240, 1024, 778, 480], // Added levels for fine-tuned responsiveness
+      progressBar: { disableProgressBar: true },
+      navigation: {
+        wheelCallDelay: 1000,
+        onHoverStop: false,
+        bullets: {
+          enable: true,
+          tmp: "<span class=\"tp-bullet-image\"></span>",
+          style: "hebe",
+          hide_onmobile: true,
+          hide_under: 300, // Hide bullets for devices under 768px
+          v_offset: 50,
+        }
+      },
+      viewPort: {
+        global: false,
+        globalDist: "-200px",
+        enable: true, // Enable viewport management for better responsiveness
+        visible_area: "80%", // Adjust viewport visibility area
+      },
+      fallbacks: {
+        allowHTML5AutoPlayOnAndroid: true,
+      },
+    });
+  }
+};
+if (window.RS_MODULES.checkMinimal !== undefined) {
+  window.RS_MODULES.checkMinimal();
+}
+
 /* Slider 3*/
 var	tpj = jQuery;
 	if(window.RS_MODULES === undefined) window.RS_MODULES = {};
