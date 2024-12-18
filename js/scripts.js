@@ -757,3 +757,48 @@ $('#tabs-nav li').click(function(){
   $(activeTab).fadeIn();
   return false;
 });
+
+
+// Function to activate a specific tab
+function activateTab(tabId) {
+	// Hide all tab content
+	document.querySelectorAll('.tab-content').forEach(tab => {
+	  tab.style.display = 'none';
+	});
+  
+	// Remove 'active' class from all tab buttons
+	document.querySelectorAll('.tab-button').forEach(button => {
+	  button.classList.remove('active');
+	});
+  
+	// Show the selected tab and mark the button as active
+	const activeTabPane = document.getElementById(tabId);
+	if (activeTabPane) {
+	  activeTabPane.style.display = 'block';
+	}
+  
+	const activeTabButton = document.querySelector(`.tab-button[data-tab="${tabId}"]`);
+	if (activeTabButton) {
+	  activeTabButton.classList.add('active');
+	}
+  }
+  
+  // Get the tab from the URL or default to 'tab1'
+  const urlParams = new URLSearchParams(window.location.search);
+  const activeTab = urlParams.get('tab') || 'tab1';
+  activateTab(activeTab);
+  
+  // Add event listeners to all tab buttons
+  document.querySelectorAll('.tab-button').forEach(button => {
+	button.addEventListener('click', event => {
+	  event.preventDefault(); // Prevent default anchor behavior
+	  const tabId = event.currentTarget.getAttribute('data-tab');
+	  activateTab(tabId);
+  
+	  // Update the URL without reloading the page
+	  const newUrl = new URL(window.location);
+	  newUrl.searchParams.set('tab', tabId);
+	  window.history.replaceState(null, '', newUrl);
+	});
+  });
+  

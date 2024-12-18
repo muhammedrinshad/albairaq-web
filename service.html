@@ -145,9 +145,7 @@
 														<li>
 															<a href="service.html">Projects</a>
 														</li>
-														<li>
-															<a href="#">Blogs</a>
-														</li>
+														
 
 													</ul>
 												</li>
@@ -207,17 +205,17 @@
                         <div class="service-tabs">
                             <div class="row">
                                 <div class="col-lg-3"data-aos="fade-up">
-                                    <ul id="tabs-nav">
-                                        <li><a href="#tab1">MECHANICAL</a></li>
-                                        <li><a href="#tab2">ELECTRICAL</a></li>
-                                        <li><a href="#tab3">INSTRUMENTATION</a></li>
-                                        <li><a href="#tab4">OIL & GAS</a></li>
-                                        <li><a href="#tab5">PIPING JOBS</a></li>
-                                    </ul>
+									<ul id="tabs-nav">
+										<li><button href="#tab1" class="tab-button" data-tab="tab1">MECHANICAL</button></li>
+										<li><button href="#tab2" class="tab-button" data-tab="tab2">ELECTRICAL</button></li>
+										<li><button href="#tab3" class="tab-button" data-tab="tab3">INSTRUMENTATION</button></li>
+										<li><button href="#tab4" class="tab-button" data-tab="tab4">OIL & GAS</button></li>
+										<li><button href="#tab5" class="tab-button" data-tab="tab5">PIPING JOBS</button></li>
+									  </ul>
                                 </div>
                                 <div class="col-lg-9"data-aos="fade-up">
                                     <div id="tabs-content">
-                                        <div id="tab1" class="tab-content row">
+                                        <div id="tab1" class="tab-content row  tab-pane">
                                             <div class="col-md-6">
 												<a href="service-detail.html">
                                                 <div class="service-innerpage">
@@ -641,11 +639,47 @@ $('#tabs-nav li').click(function(){
   $(this).addClass('active');
   $('.tab-content').hide();
   
-  var activeTab = $(this).find('a').attr('href');
+  var activeTab = $(this).find('button').attr('href');
   $(activeTab).fadeIn();
   return false;
 });
     </script>
+	<script>
+		function activateTab(tabId) {
+		  document.querySelectorAll('.tab-content').forEach(tab => {
+			tab.style.display = 'none';
+		  });
+		  document.querySelectorAll('.tab-button').forEach(button => {
+			button.classList.remove('active');
+		  });
+		
+		  const activeTabPane = document.getElementById(tabId);
+		  if (activeTabPane) {
+			activeTabPane.style.display = 'block';
+		  }
+		
+		  const activeTabButton = document.querySelector(`.tab-button[data-tab="${tabId}"]`);
+		  if (activeTabButton) {
+			activeTabButton.classList.add('active');
+		  }
+		}
+		
+		const urlParams = new URLSearchParams(window.location.search);
+		const activeTab = urlParams.get('tab') || 'tab1';
+		activateTab(activeTab);
+		
+		document.querySelectorAll('.tab-button').forEach(button => {
+		  button.addEventListener('click', event => {
+			event.preventDefault();
+			const tabId = event.currentTarget.getAttribute('data-tab');
+			activateTab(tabId);
+		
+			const newUrl = new URL(window.location);
+			newUrl.searchParams.set('tab', tabId);
+			window.history.replaceState(null, '', newUrl);
+		  });
+		});
+		</script>
 </body>
 
 </html>

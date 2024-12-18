@@ -3576,9 +3576,9 @@ body {
 	width:3px; 
 	height:3px; 
 	position:absolute; 
-	background:#ffffff; 
+	background:#094B9E; 
 	cursor:pointer; 
-	border:5px solid #000000; 
+	border:5px solid #fff; 
 	border-radius:50%; 
 	box-sizing:content-box; 
 	-webkit-perspective:400; 
@@ -3589,8 +3589,8 @@ body {
 }
 #rev_slider_2_1_wrapper .hebe .tp-bullet.rs-touchhover,
 #rev_slider_2_1_wrapper .hebe .tp-bullet.selected{
-	background:#000000; 
-	border-color:#ffffff
+	background: #ffffff; 
+	border-color:#094B9E;
 }
 #rev_slider_2_1_wrapper .hebe .tp-bullet-image{
 	position:absolute; 

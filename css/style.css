@@ -3959,10 +3959,26 @@ height: 100% !important;
 .slider-padding{
     padding-top: 4.4rem !important;
 }
+/* #rev_slider_2_1_wrapper {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto;
+  }
+  
+  #rev_slider_2_1 {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .rs-mask-wrap{
+    height: 100% !important;
+    width: 100% !important;
+  } */
 
 
-
-
+/* .slider-video{
+    width: 1700px;
+    height: 1000px;
+} */
 
 
 
