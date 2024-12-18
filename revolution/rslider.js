@@ -1,4 +1,5 @@
-/* Slider 2 */
+
+/* Slider 2*/ 
 var tpj = jQuery;
 if (window.RS_MODULES === undefined) window.RS_MODULES = {};
 if (RS_MODULES.modules === undefined) RS_MODULES.modules = {};
@@ -30,10 +31,20 @@ RS_MODULES.modules["revslider21"] = {
       navigation: {
         wheelCallDelay: 1000,
         onHoverStop: false, // Do not stop on hover
+        bullets: {
+          enable: true,
+          tmp: "<span class=\"tp-bullet-image\"></span>",
+          style: "hebe",
+          hide_onmobile: true,
+          hide_under: 768, // Hide bullets for devices under 768px
+          v_offset: 50,
+        }
       },
       viewPort: {
-        enable: true,
-        visible_area: "100%", // Slider fully visible in viewport
+        global: false,
+        globalDist: "0px",
+        enable: true, // Enable viewport management for better responsiveness
+        visible_area: "100%", // Adjust viewport visibility area
       },
       fallbacks: {
         allowHTML5AutoPlayOnAndroid: true,
@@ -44,3 +55,4 @@ RS_MODULES.modules["revslider21"] = {
 if (window.RS_MODULES.checkMinimal !== undefined) {
   window.RS_MODULES.checkMinimal();
 }
+
